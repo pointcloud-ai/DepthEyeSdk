@@ -16,6 +16,17 @@ Feature:
 * TI OPT8320 sensor
 * Resolution is 80*60
 
+## Sample
+[Sample](https://github.com/pointcloud-ai/DepthEyeSdk/tree/master/test)
+
+
+## Viewer 
+
+* [Simple viewer on Ubuntu](https://github.com/pointcloud-ai/DepthEyeSdk/tree/master/tools)
+* [Windows Voxel Viewer]( http://statics3.seeedstudio.com/assets/file/bazaar/product/Windows_Viewer.rar)
+* [Viewer Quick Start Guide]( http://www.ti.com.cn/cn/lit/ug/sbou157/sbou157.pdf)
+
+
 ## Getting started
 
 Learn more to use DepthEyeSdk at our [wiki](https://github.com/pointcloud-ai/DepthEyeSdk/wiki)
