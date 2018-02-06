@@ -34,31 +34,34 @@ Learn more to use DepthEyeSdk at our [wiki](https://github.com/pointcloud-ai/Dep
 
 ### 1) SET VOXEL_SDK_PATH
 
-Install 
+To install vim and cmake, please run
+
 `sudo apt-get install cmake vim `
+
+Please run `# uname -a` to check ubuntu's version first
 
 |Plateform | SDK Path |
 |- | :-: | 
 |Ubuntu 14.04 |/third_party/voxelsdk_ubuntu_3.13|
 |Ubuntu 16.04 | /third_party/voxelsdk_ubuntu_4.13|
 |MacOs | /third_party/voxelsdk_osx|
- 
+ `# vim ~/.bashrc`
 
-Modify .bashrc to add SDK path：
+Modify .bashrc to set environment variables：
 
 `# vim ~/.bashrc`
 
 add below source code to the end of bashrc file：
 
 `export VOXEL_SDK_PATH="your_directory/third_party/voxelsdk_ubuntu_3.13"`
-
+`export PATH=$VOXEL_SDK_PATH/lib:$VOXEL_SDK_PATH/bin:$PATH`
 We need to make above changes come into effect：
  
 `# source ~/.bashrc`
 
 Finally, echo the constant to verify ：
 
-`# echo $VOXEL_SDK_PATH `
+`# echo $VOXEL_SDK_PATH`
 
 ### 2) SET USB Driver
 (For Ubuntu only)
@@ -88,3 +91,9 @@ Plug the module and run it:
 `./bin/H1AsciiSample`
 
 You can see the result!
+
+## Common problem
+
+### Lack of power supply
+
+Need to add usb hub. Then insert the double head USB cable together on the USB hub.
