@@ -34,6 +34,8 @@ Learn more to use DepthEyeSdk at our [wiki](https://github.com/pointcloud-ai/Dep
 
 ### 1) SET VOXEL_SDK_PATH
 
+Install 
+`sudo apt-get install cmake vim `
 
 |Plateform | SDK Path |
 |- | :-: | 
@@ -44,21 +46,28 @@ Learn more to use DepthEyeSdk at our [wiki](https://github.com/pointcloud-ai/Dep
 
 Modify .bashrc to add SDK path：
 
-`# vi /etc/profile`
+`# vim ~/.bashrc`
 
-`export VOXEL_SDK_PATH ="your_directory/third_party/voxelsdk_ubuntu_3.13"`
+add below source code to the end of bashrc file：
 
+`export VOXEL_SDK_PATH="your_directory/third_party/voxelsdk_ubuntu_3.13"`
+
+We need to make above changes come into effect：
  
-`# source /etc/profile`
+`# source ~/.bashrc`
+
+Finally, echo the constant to verify ：
 
 `# echo $VOXEL_SDK_PATH `
 
 ### 2) SET USB Driver
 (For Ubuntu only)
 
-`cp /third_party./udev/rules.d/72-DepthEyeH1CDK.rules /etc/udev/rules.d/`
+`sudo cp ./third_party/udev/rules.d/72-DepthEyeH1CDK.rules /etc/udev/rules.d/`
 
-`chmod a+x /etc/udev/rules.d/72-DepthEyeH1CDK.rules`
+`sudo chmod a+x /etc/udev/rules.d/72-DepthEyeH1CDK.rules`
+
+`sudo udevadm control --reload`
 
 ### 3) Make
 
@@ -68,7 +77,7 @@ Modify .bashrc to add SDK path：
 
 `$ cmake ..`
 
-`$ make ..`
+`$ make `
 
 You can get message as below : 
 
