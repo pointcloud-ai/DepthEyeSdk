@@ -26,35 +26,41 @@ Feature:
 * [Windows Voxel Viewer]( http://statics3.seeedstudio.com/assets/file/bazaar/product/Windows_Viewer.rar)
 * [Viewer Quick Start Guide]( http://www.ti.com.cn/cn/lit/ug/sbou157/sbou157.pdf)
 
+![Voxel Viewer Snapshot](https://raw.githubusercontent.com/pointcloud-ai/DepthEyeSdk/master/third_party/images/VoxelViewerSnapshot.jp2)
+
 
 ## Getting started
 
-Learn more to use DepthEyeSdk at our [wiki](https://github.com/pointcloud-ai/DepthEyeSdk/wiki)
+Learn more to use DepthEyeSdk at our [wiki](https://github.com/pointcloud-ai/DepthEyeSdk/wiki).
 
 
 ### 1) SET VOXEL_SDK_PATH
 
-To install vim and cmake, please run
+To install vim and cmake, please run:
 
 `sudo apt-get install cmake vim `
 
-Please run `# uname -a` to check ubuntu's version first
+Please run `# uname -a` to check system platform version first.
 
 |Plateform | SDK Path |
 |- | :-: | 
 |Ubuntu 14.04 |/third_party/voxelsdk_ubuntu_3.13|
 |Ubuntu 16.04 | /third_party/voxelsdk_ubuntu_4.13|
 |MacOs | /third_party/voxelsdk_osx|
- `# vim ~/.bashrc`
+
 
 Modify .bashrc to set environment variables：
 
 `# vim ~/.bashrc`
 
 add below source code to the end of bashrc file：
+```
+export VOXEL_SDK_PATH="your_directory/third_party/voxelsdk_ubuntu_3.13"
+export PATH=$VOXEL_SDK_PATH/lib:$VOXEL_SDK_PATH/bin:$PATH
+```
 
-`export VOXEL_SDK_PATH="your_directory/third_party/voxelsdk_ubuntu_3.13"`
-`export PATH=$VOXEL_SDK_PATH/lib:$VOXEL_SDK_PATH/bin:$PATH`
+PS：Please remember to replace voxelsdk_ubuntu_3.13 with your system platform.
+
 We need to make above changes come into effect：
  
 `# source ~/.bashrc`
@@ -65,22 +71,27 @@ Finally, echo the constant to verify ：
 
 ### 2) SET USB Driver
 (For Ubuntu only)
+```
+sudo cp ./third_party/udev/rules.d/72-DepthEyeH1CDK.rules /etc/udev/rules.d/
 
-`sudo cp ./third_party/udev/rules.d/72-DepthEyeH1CDK.rules /etc/udev/rules.d/`
+sudo chmod a+x /etc/udev/rules.d/72-DepthEyeH1CDK.rules
 
-`sudo chmod a+x /etc/udev/rules.d/72-DepthEyeH1CDK.rules`
-
-`sudo udevadm control --reload`
+sudo udevadm control --reload
+```
 
 ### 3) Make
 
-`$ mkdir build    `
+In the root directory of SDK, run below commands one by one：
 
-`$ cd build/   `
+```
+$ mkdir build
 
-`$ cmake ..`
+$ cd build/ 
 
-`$ make `
+$ cmake ..
+
+$ make 
+```
 
 You can get message as below : 
 
@@ -91,6 +102,8 @@ Plug the module and run it:
 `./bin/H1AsciiSample`
 
 You can see the result!
+
+![H1AsciiSample's result](https://raw.githubusercontent.com/pointcloud-ai/DepthEyeSdk/master/third_party/images/ascii_depth_data.jpeg)
 
 ## Common problem
 
