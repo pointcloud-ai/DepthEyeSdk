@@ -1,9 +1,9 @@
 # DepthEyeSdk
 
 
-Please send mail to sdk@pointcloud.ai for any issue. We will reply you asap.
+Please send mail to sdk@pointcloud.ai. We will reply you asap.
 
-
+Check or raise issue on [Issue tracking] (https://github.com/pointcloud-ai/DepthEyeSdk/issues)
 
 
 ## Purpose
@@ -21,6 +21,8 @@ Feature:
 * TI OPT8320 sensor
 * Resolution is 80*60
 
+
+
 ## Test Examples
 * [Ascii View Example](https://github.com/pointcloud-ai/DepthEyeSdk/tree/master/test)
 * [Android Example](https://github.com/pointcloud-ai/DepthEyeSdk_android)
@@ -37,7 +39,10 @@ Feature:
 
 ## Getting started
 
-Learn more to use DepthEyeSdk at our [wiki](https://github.com/pointcloud-ai/DepthEyeSdk/wiki).
+
+### 0) Hardware Install
+
+Please add one usb hub with Independent power supply. Then insert the double head USB cable together on the USB hub and connect the usb hub to your PC.
 
 
 ### 1) SET VOXEL_SDK_PATH
@@ -115,10 +120,9 @@ You can see the result!
 
 
 You can modify some of the hardware according to the information we provide to meet your needs.
+For example, you can reducing power consumption allows the device to use the standard USB interface for power supply without additional power supply.
 
 [Hardware modification Guide](https://github.com/pointcloud-ai/DepthEyeSdk/wiki/Hardware-modification-Guide).
-
-
 
 
 
@@ -127,3 +131,7 @@ You can modify some of the hardware according to the information we provide to m
 ### Lack of power supply
 
 Need to add usb hub. Then insert the double head USB cable together on the USB hub.
+
+## Wiki
+
+Learn more to use DepthEyeSdk at our [wiki](https://github.com/pointcloud-ai/DepthEyeSdk/wiki).
