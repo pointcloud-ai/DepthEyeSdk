@@ -4,6 +4,8 @@
 Please send mail to sdk@pointcloud.ai for any issue. We will reply you asap.
 
 
+
+
 ## Purpose
 DepthEyeSdk is a sdk that provides interfaces for Depth Eye.
 
@@ -108,6 +110,17 @@ Plug the module and run it:
 You can see the result!
 
 ![H1AsciiSample's result](https://raw.githubusercontent.com/pointcloud-ai/DepthEyeSdk/master/third_party/images/ascii_depth_data.jpeg)
+
+## Modify Hardware  
+
+
+You can modify some of the hardware according to the information we provide to meet your needs.
+
+[Hardware modification Guide](https://github.com/pointcloud-ai/DepthEyeSdk/wiki/Hardware-modification-Guide).
+
+
+
+
 
 ## Common problem
 
