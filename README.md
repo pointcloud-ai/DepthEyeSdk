@@ -17,13 +17,14 @@ Feature:
 * Resolution is 80*60
 
 ## Sample
-[Sample](https://github.com/pointcloud-ai/DepthEyeSdk/tree/master/test)
-
+[Ascii View Sample](https://github.com/pointcloud-ai/DepthEyeSdk/tree/master/test)
+[Android Sample](https://github.com/pointcloud-ai/DepthEyeSdk_android)
 
 ## Viewer 
 
 * [Simple viewer on Ubuntu](https://github.com/pointcloud-ai/DepthEyeSdk/tree/master/tools)
 * [Windows Voxel Viewer]( http://statics3.seeedstudio.com/assets/file/bazaar/product/Windows_Viewer.rar)
+* [Voxel Viewer2 for Ubuntu And OSX]( https://github.com/pointcloud-ai/VoxelViewer2)
 * [Viewer Quick Start Guide]( http://www.ti.com.cn/cn/lit/ug/sbou157/sbou157.pdf)
 
 ![Voxel Viewer Snapshot](https://raw.githubusercontent.com/pointcloud-ai/DepthEyeSdk/master/third_party/images/VoxelViewerSnapshot.jp2)
