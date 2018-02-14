@@ -16,9 +16,9 @@ Feature:
 * TI OPT8320 sensor
 * Resolution is 80*60
 
-## Test Sample
-* [Ascii View Sample](https://github.com/pointcloud-ai/DepthEyeSdk/tree/master/test)
-* [Android Sample](https://github.com/pointcloud-ai/DepthEyeSdk_android)
+## Test Examples
+* [Ascii View Example](https://github.com/pointcloud-ai/DepthEyeSdk/tree/master/test)
+* [Android Example](https://github.com/pointcloud-ai/DepthEyeSdk_android)
 
 ## Voxel Viewer 
 
