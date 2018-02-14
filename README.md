@@ -1,6 +1,9 @@
 # DepthEyeSdk
 
 
+Please send mail to sdk@pointcloud.ai for any issue. We will reply you asap.
+
+
 ## Purpose
 DepthEyeSdk is a sdk that provides interfaces for Depth Eye.
 
