@@ -31,6 +31,9 @@ Feature:
 
 * [Simple viewer on Ubuntu](https://github.com/pointcloud-ai/DepthEyeSdk/tree/master/tools)
 * [Windows Voxel Viewer]( http://statics3.seeedstudio.com/assets/file/bazaar/product/Windows_Viewer.rar)
+* [Window version Voxel Viewer config setting]( 
+https://github.com/pointcloud-ai/DepthEyeSdk/wiki/Window-version-Voxel-Viewer-config-setting)
+
 * [Voxel Viewer2 for Ubuntu And OSX]( https://github.com/pointcloud-ai/VoxelViewer2)
 * [Viewer Quick Start Guide]( http://www.ti.com.cn/cn/lit/ug/sbou157/sbou157.pdf)
 
