@@ -21,6 +21,10 @@ Feature:
 * TI OPT8320 sensor
 * Resolution is 80*60
 
+## Caution
+1. Make sure you have used the correct profile which name is H1ForSeeed
+1. Please don't change the Integration Duty Cycle（intg_time) more than 20% .Otherwise, it is possible to destroy the hardware
+1. The Heat sink could be hot when this module is working, please be carefull to avoid scalding your hands
 
 
 ## Test Examples
