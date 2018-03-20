@@ -25,8 +25,7 @@ Feature:
 1. Make sure you have used the correct profile which name is H1ForSeeed
 1. Please don't change the Integration Duty Cycle（intg_time) more than 20% .Otherwise, it is possible to destroy the hardware
 1. The Heat sink could be hot when this module is working, please be carefull to avoid scalding your hands
-1. Must update profile before you connect module with Windows Voxel Viewer. Detail please refer to 【[Window version Voxel Viewer config setting]( 
-https://github.com/pointcloud-ai/DepthEyeSdk/wiki/Window-version-Voxel-Viewer-config-setting)】
+1. Please don't use th Voxel Viewer from TI. Incorrect configuration files can damage the hardware. 
 
 
 
@@ -37,8 +36,7 @@ https://github.com/pointcloud-ai/DepthEyeSdk/wiki/Window-version-Voxel-Viewer-co
 ## Voxel Viewer 
 
 * [Simple viewer on Ubuntu](https://github.com/pointcloud-ai/DepthEyeSdk/tree/master/tools)
-* [Windows Voxel Viewer]( http://statics3.seeedstudio.com/assets/file/bazaar/product/Windows_Viewer.rar)【[[Must do action before using: Window version Voxel Viewer config setting]( 
-https://github.com/pointcloud-ai/DepthEyeSdk/wiki/Window-version-Voxel-Viewer-config-setting)】
+* [Windows Voxel Viewer]( http://statics3.seeedstudio.com/assets/file/bazaar/product/DepthEyeVoxelViewerSetup1.0.zip) 
 
 * [Voxel Viewer2 for Ubuntu And OSX]( https://github.com/pointcloud-ai/VoxelViewer2)
 * [Viewer Quick Start Guide]( http://www.ti.com.cn/cn/lit/ug/sbou157/sbou157.pdf)
