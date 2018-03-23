@@ -103,7 +103,13 @@ void rawdataCallback(DepthCamera &dc, const Frame &frame, DepthCamera::FrameType
 		return;
 	}
 	short phaseFrame[60*80];
-	memcpy((char *)phaseFrame, (char *)d->phase(), sizeof(short) * d->size.width * d->size.height);	    
+	memcpy((char *)phaseFrame, (char *)d->phase(), sizeof(short) * d->size.width * d->size.height);
+	//short amplitudeFrame[60*80];
+	//memcpy((char *)amplitudeFrame, (char *)d->amplitude(), sizeof(short) * d->size.width * d->size.height);
+	//char ambientFrame[60*80];
+	//memcpy((char *)ambientFrame, (char *)d->ambient(), sizeof(char) * d->size.width * d->size.height);
+	//char flagsFrame[60*80];
+	//memcpy((char *)flagsFrame, (char *)d->flags(), sizeof(char) * d->size.width * d->size.height);   
 	printOutFrameInfo(phaseFrame);
 
 }
