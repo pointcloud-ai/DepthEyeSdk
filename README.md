@@ -75,6 +75,8 @@ add below source code to the end of bashrc file：
 ```
 export VOXEL_SDK_PATH="your_directory/third_party/voxelsdk_ubuntu_3.13"
 export PATH=$VOXEL_SDK_PATH/lib:$VOXEL_SDK_PATH/bin:$PATH
+export LD_LIBRARY_PATH=$VOXEL_SDK_PATH/lib:$LD_LIBRARY_PATH
+
 ```
 
 PS：Please remember to replace voxelsdk_ubuntu_3.13 with your system platform.
